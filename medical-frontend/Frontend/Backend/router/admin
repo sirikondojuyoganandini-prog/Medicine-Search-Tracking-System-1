@@ -1,0 +1,19 @@
+// Admin API Route Definitions & Client Interface
+// Connects frontend components to medical-backend REST APIs
+
+export const ADMIN_ROUTES = {
+  STATS: '/admin/stats',
+  CUSTOMERS: '/admin/customers',
+  DELETE_CUSTOMER: (id) => `/admin/customers/${id}`,
+  SHOPS: '/admin/shops',
+  APPROVE_SHOP: (id) => `/admin/shops/${id}/approve`,
+  FREEZE_SHOP: (id) => `/admin/shops/${id}/freeze`,
+  DELETE_SHOP: (id) => `/admin/shops/${id}`,
+  MEDICINES: '/admin/medicines',
+  DELETE_MEDICINE: (id) => `/admin/medicines/${id}`,
+  ORDERS: '/admin/orders',
+  UPDATE_ORDER_STATUS: (id) => `/admin/orders/${id}/status`,
+  FEEDBACKS: '/admin/feedbacks',
+};
+
+export default ADMIN_ROUTES;
